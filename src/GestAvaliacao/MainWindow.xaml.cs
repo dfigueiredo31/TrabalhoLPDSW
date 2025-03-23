@@ -19,6 +19,7 @@ namespace GestAvaliacao
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }
