@@ -1,12 +1,30 @@
 ﻿<Window x:Class="GestAvaliacao.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:GestAvaliacao"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="GestAvaliação" 
+        Height="400" 
+        Width="600"
+        >
+    <Grid Margin="10,10">
+        <!--Definição das rows-->
+        <Grid.RowDefinitions >
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
 
+        <!--Definição das colunas-->
+        <Grid.ColumnDefinitions  >
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!--Botões laterais-->
+        <Button Grid.Row="0" Grid.Column="0" Name="ListaAlunos" Margin="5,5" Content="Lista Alunos" Click="ListaAlunos_Click" />
+        <Button Grid.Row="1" Grid.Column="0" Name="GerirTarefas" Margin="5,5" Content="Tarefas" />
+        <Button Grid.Row="2" Grid.Column="0" Name="FotoPerfil" Margin="5,5" Content="Perfil" Click="FotoPerfil_Click" />
+
+        <Frame Grid.Row="0" Grid.Column="1" Grid.RowSpan="4" Name="PainelPrincipal"></Frame>
     </Grid>
 </Window>

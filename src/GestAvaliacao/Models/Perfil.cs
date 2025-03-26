@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace GestAvaliacao.Models
 {
-    internal class Perfil
+    public class Perfil
     {
-        public string Nome { get; set; }
-        public string Email { get; set; }
-        public string Foto { get; set; }
+        public string Nome { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Foto { get; set; } = string.Empty;
     }
 }

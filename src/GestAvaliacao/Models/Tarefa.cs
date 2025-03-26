@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestAvaliacao.Models
 {
-    internal class Tarefa
+    public class Tarefa
     {
         public int Id { get; set; }
         public string Titlo { get; set; }

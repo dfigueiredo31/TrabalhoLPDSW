@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestAvaliacao.Models
 {
-    internal class Classificacao
+    public class Classificacao
     {
         public float Valor { get; set; }
         public int TarefaId { get; set; }

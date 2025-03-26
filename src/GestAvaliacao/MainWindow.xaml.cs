@@ -21,5 +21,14 @@ namespace GestAvaliacao
             InitializeComponent();
 
         }
+        private void ListaAlunos_Click(object sender, RoutedEventArgs e)
+        {
+            PainelPrincipal.Navigate(new Uri("Views/GerirListaAlunosView.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void FotoPerfil_Click(object sender, RoutedEventArgs e)
+        {
+            PainelPrincipal.Navigate(new Uri("Views/GerirPerfilView.xaml", UriKind.RelativeOrAbsolute));
+        }
     }
 }
